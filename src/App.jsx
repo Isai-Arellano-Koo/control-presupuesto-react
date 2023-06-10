@@ -8,7 +8,7 @@ import IconoNuevoGasto from "./img/nuevo-gasto.svg";
 
 function App() {
   const [presupuesto, setPresupuesto] = useState(
-    Number(localStorage.getItem("presupuesto")) ?? ''
+    Number(localStorage.getItem("presupuesto")) ?? 0
   );
   const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
 
@@ -37,7 +37,7 @@ function App() {
   }, [gastoEditar]);
 
   useEffect(() => {
-    localStorage.setItem("presupuesto", presupuesto ?? '');
+    localStorage.setItem("presupuesto", presupuesto ?? 0);
   }, [presupuesto]);
 
   useEffect(() => {
@@ -54,10 +54,12 @@ function App() {
   }, [filtro]);
 
   useEffect(() => {
-    const presupuestoLs = Number(localStorage.getItem("presupuesto")) ?? '';
+    const presupuestoLs = Number(localStorage.getItem("presupuesto")) ?? 0;
 
     if (presupuestoLs > 0) {
       setIsValidPresupuesto(true);
+    } else {
+      setPresupuesto('')
     }
   }, []);
 
