@@ -37,7 +37,7 @@ function App() {
   }, [gastoEditar]);
 
   useEffect(() => {
-    localStorage.setItem("presupuesto", presupuesto ?? 0);
+    localStorage.setItem("presupuesto", presupuesto ?? '');
   }, [presupuesto]);
 
   useEffect(() => {
