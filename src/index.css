@@ -282,7 +282,7 @@ main {
 }
 
 .cantidad-gasto {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--negro);
     font-weight: 900;
 }
@@ -294,7 +294,24 @@ main {
 }
 
 .contenido-gasto img {
-    width: 10rem;
+    width: 7rem;
+}
+@media (min-width: 768px) {
+    .descripcion-gasto .categoria{
+        font-size: 1.6rem;
+    }
+    .descripcion-gasto .fecha-gasto {
+        font-size: 1.8rem;
+    }
+    .descripcion-gasto .nombre-gasto {
+        font-size: 2.4;
+    }
+    .cantidad-gasto {
+        font-size: 2.4rem;
+    }
+    .contenido-gasto img {
+        width: 10rem;
+    }
 }
 
 .descripcion-gasto p {
@@ -302,7 +319,7 @@ main {
 }
 .descripcion-gasto .categoria {
     color: var(--gris);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -311,14 +328,14 @@ main {
 }
 .descripcion-gasto .nombre-gasto {
     color: var(--gris-oscuro);
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 .descripcion-gasto .nombre-gasto:hover {
     cursor: pointer;
 }
 .descripcion-gasto .fecha-gasto {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--gris-oscuro);
 }
