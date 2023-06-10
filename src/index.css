@@ -349,14 +349,16 @@ main {
 }
 .modal .cerrar-modal {
     position: absolute;
-    right: .2rem;
+    right: 1.5rem;
     top: 3rem;
     width: 3rem;
     height: 3rem;
 }
 @media (min-width: 768px) {
     .modal .cerrar-modal {
+        position: absolute;
         right: 3rem;
+        top: 3rem
     }
 }
 .modal .cerrar-modal img {
@@ -365,12 +367,17 @@ main {
 }
 
 .modal .formulario {
-    max-width: 80rem;
+    max-width: 33rem;
     width: 40rem;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     opacity: 0;
+}
+@media (min-width: 768px) {
+    .modal .formulario {
+        max-width: 80rem;
+    }
 }
 .modal label {
     color: var(--blanco);
