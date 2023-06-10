@@ -8,7 +8,7 @@ import IconoNuevoGasto from "./img/nuevo-gasto.svg";
 
 function App() {
   const [presupuesto, setPresupuesto] = useState(
-    Number(localStorage.getItem("presupuesto")) ?? 0
+    Number(localStorage.getItem("presupuesto")) ?? ''
   );
   const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
 
